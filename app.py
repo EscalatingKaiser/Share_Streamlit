@@ -9,8 +9,8 @@ y = np.sin(x)
 # Create a plot
 fig, ax = plt.subplots()
 ax.plot(x, y)
-print(fig)
+plot.show()
 
 # Streamlit app
-st.title("My Interactive Plot")
-st.pyplot(fig)
+# st.title("My Interactive Plot")
+# st.pyplot(fig)
