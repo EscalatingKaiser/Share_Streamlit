@@ -1,16 +1,7 @@
-import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
+import plotly.express as px
+import pandas as pd
 
-# Sample Data
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
+df = px.data.iris()
+fig = px.scatter(df, x="sepal_width", y="sepal_length", color="species")
 
-# Create a plot
-fig, ax = plt.subplots()
-ax.plot(x, y)
-plot.show()
-
-# Streamlit app
-# st.title("My Interactive Plot")
-# st.pyplot(fig)
+fig.show()
